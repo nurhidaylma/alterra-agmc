@@ -1,0 +1,684 @@
+{
+	"info": {
+		"_postman_id": "384f9559-dadc-47fa-8135-5cc7e77cfb21",
+		"name": "Alterra Golang",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20136069"
+	},
+	"item": [
+		{
+			"name": "Rent A Book",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Get All Book",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book",
+									"protocol": "https",
+									"host": [
+										"virtserver",
+										"swaggerhub",
+										"com"
+									],
+									"path": [
+										"sepulsa",
+										"RentABook-API",
+										"1.0.0",
+										"book"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 13 Sep 2022 04:40:05 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "153"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,Content-Type,Accept,Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.29.v20200521)"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"created_at\": \"2019-02-18T00:00:00\",\n        \"updated_at\": \"2019-02-18T00:00:00\",\n        \"deleted_at\": \"2019-02-18T00:00:00\",\n        \"id\": 1234,\n        \"title\": \"Judul Buku Satu\",\n        \"isbn\": \"1-234-5678-9101112-13\",\n        \"writer\": \"Dr. Who\"\n    }\n]"
+						},
+						{
+							"name": "Get Book By ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+									"protocol": "https",
+									"host": [
+										"virtserver",
+										"swaggerhub",
+										"com"
+									],
+									"path": [
+										"sepulsa",
+										"RentABook-API",
+										"1.0.0",
+										"book",
+										"1234"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 13 Sep 2022 04:42:47 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "149"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,Content-Type,Accept,Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.29.v20200521)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"created_at\": \"2019-02-18T00:00:00\",\n    \"updated_at\": \"2019-02-18T00:00:00\",\n    \"deleted_at\": \"2019-02-18T00:00:00\",\n    \"id\": 1234,\n    \"title\": \"Judul Buku Satu\",\n    \"isbn\": \"1-234-5678-9101112-13\",\n    \"writer\": \"Dr. Who\"\n}"
+						},
+						{
+							"name": "Create New Book",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"client_id\": 1123,\r\n    \"client_key\": \"CLIENT01\",\r\n    \"client_secret\": \"SECRET01\",\r\n    \"status\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book",
+									"protocol": "https",
+									"host": [
+										"virtserver",
+										"swaggerhub",
+										"com"
+									],
+									"path": [
+										"sepulsa",
+										"RentABook-API",
+										"1.0.0",
+										"book"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 13 Sep 2022 04:44:41 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "130"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,Content-Type,Accept,Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.29.v20200521)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"created_at\": \"2019-02-18T00:00:00\",\n    \"updated_at\": \"2019-02-18T00:00:00\",\n    \"deleted_at\": \"2019-02-18T00:00:00\",\n    \"client_id\": 1234,\n    \"client_key\": \"CLIENT01\",\n    \"client_secret\": \"SECRET01\",\n    \"status\": true\n}"
+						},
+						{
+							"name": "Update Book By ID",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1234,\r\n    \"title\": \"The Little House\",\r\n    \"isbn\": \"1-234-5678-9101112-14\",\r\n    \"writer\": \"Laura Wilder\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+									"protocol": "https",
+									"host": [
+										"virtserver",
+										"swaggerhub",
+										"com"
+									],
+									"path": [
+										"sepulsa",
+										"RentABook-API",
+										"1.0.0",
+										"book",
+										"1234"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 13 Sep 2022 04:47:08 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "149"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,Content-Type,Accept,Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.29.v20200521)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"created_at\": \"2019-02-18T00:00:00\",\n    \"updated_at\": \"2019-02-18T00:00:00\",\n    \"deleted_at\": \"2019-02-18T00:00:00\",\n    \"id\": 1234,\n    \"title\": \"Judul Buku Satu\",\n    \"isbn\": \"1-234-5678-9101112-13\",\n    \"writer\": \"Dr. Who\"\n}"
+						},
+						{
+							"name": "Delete Book By ID",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/book/1234",
+									"protocol": "https",
+									"host": [
+										"virtserver",
+										"swaggerhub",
+										"com"
+									],
+									"path": [
+										"sepulsa",
+										"RentABook-API",
+										"1.0.0",
+										"book",
+										"1234"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 13 Sep 2022 04:47:49 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "X-Requested-With,Content-Type,Accept,Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.4.29.v20200521)"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"deleted\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Binance",
+			"item": [
+				{
+					"name": "Get Account Info",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const ts  = Date.now();\r",
+									"pm.environment.set(\"timestamp\", ts);\r",
+									"\r",
+									"let paramsObject = {};\r",
+									"\r",
+									"const binance_api_secret = pm.environment.get(\"api_secret\");\r",
+									"\r",
+									"const parameters = pm.request.url.query;\r",
+									"\r",
+									"parameters.map((param) => {\r",
+									"    if (param.key != 'signature' && \r",
+									"        param.key != 'timestamp' && \r",
+									"        !is_empty(param.value) &&\r",
+									"        !is_disabled(param.disabled)) {\r",
+									"            paramsObject[param.key] = param.value;\r",
+									"            //console.log(encodeURIComponent(param.value));\r",
+									"            //pm.environment.set(param.key, encodeURIComponent(param.value));\r",
+									"    }\r",
+									"})\r",
+									"        \r",
+									"Object.assign(paramsObject, {'timestamp': ts});\r",
+									"\r",
+									"if (binance_api_secret) {\r",
+									"    const queryString = Object.keys(paramsObject).map((key) => {\r",
+									"        return `${key}=${paramsObject[key]}`;\r",
+									"    }).join('&');\r",
+									"    console.log(queryString);\r",
+									"    const signature = CryptoJS.HmacSHA256(queryString, binance_api_secret).toString();\r",
+									"    pm.environment.set(\"signature\", signature);\r",
+									"}\r",
+									"\r",
+									"\r",
+									"function is_disabled(str) {\r",
+									"    return str == true;\r",
+									"}\r",
+									"\r",
+									"function is_empty(str) {\r",
+									"    if (typeof str == 'undefined' ||\r",
+									"        !str || \r",
+									"        str.length === 0 || \r",
+									"        str === \"\" ||\r",
+									"        !/[^\\s]/.test(str) ||\r",
+									"        /^\\s*$/.test(str) ||\r",
+									"        str.replace(/\\s/g,\"\") === \"\")\r",
+									"    {\r",
+									"        return true;\r",
+									"    }\r",
+									"    else\r",
+									"    {\r",
+									"        return false;\r",
+									"    }\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-MBX-APIKEY",
+								"value": "{{api_key}}",
+								"type": "text"
+							}
+						]
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "X-MBX-APIKEY",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://testnet.binance.vision/api/v3/account?timestamp={{timestamp}}&signature={{signature}}",
+									"protocol": "https",
+									"host": [
+										"testnet",
+										"binance",
+										"vision"
+									],
+									"path": [
+										"api",
+										"v3",
+										"account"
+									],
+									"query": [
+										{
+											"key": "recvWindow",
+											"value": "5000",
+											"disabled": true
+										},
+										{
+											"key": "timestamp",
+											"value": "{{timestamp}}"
+										},
+										{
+											"key": "signature",
+											"value": "{{signature}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "254"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 13 Sep 2022 05:37:32 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "nginx"
+								},
+								{
+									"key": "x-mbx-uuid",
+									"value": "0c800f25-49c7-4f5a-86c8-ac374143cd90"
+								},
+								{
+									"key": "x-mbx-used-weight",
+									"value": "10"
+								},
+								{
+									"key": "x-mbx-used-weight-1m",
+									"value": "10"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubdomains"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-Content-Security-Policy",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "X-WebKit-CSP",
+									"value": "default-src 'self'"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 475d669d6a669094dfa09def007f90d6.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "SIN2-P1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "7D5kWTxtKiBxuWpufkDyAB90z0MVrl7JVCtaHLbdD_S_Ai3FY10IGA=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"makerCommission\": 0,\n    \"takerCommission\": 0,\n    \"buyerCommission\": 0,\n    \"sellerCommission\": 0,\n    \"canTrade\": true,\n    \"canWithdraw\": false,\n    \"canDeposit\": false,\n    \"brokered\": false,\n    \"updateTime\": 1663044603247,\n    \"accountType\": \"SPOT\",\n    \"balances\": [\n        {\n            \"asset\": \"BNB\",\n            \"free\": \"1000.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"BTC\",\n            \"free\": \"1.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"BUSD\",\n            \"free\": \"10000.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"ETH\",\n            \"free\": \"100.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"LTC\",\n            \"free\": \"500.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"TRX\",\n            \"free\": \"500000.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"USDT\",\n            \"free\": \"10000.00000000\",\n            \"locked\": \"0.00000000\"\n        },\n        {\n            \"asset\": \"XRP\",\n            \"free\": \"50000.00000000\",\n            \"locked\": \"0.00000000\"\n        }\n    ],\n    \"permissions\": [\n        \"SPOT\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Recent Klines Data",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-MBX-APIKEY",
+								"value": "{{api_key}}",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "X-MBX-SECRETKEY",
+								"value": "{{api_secret}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://testnet.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=MINUTE",
+							"protocol": "https",
+							"host": [
+								"testnet",
+								"binance",
+								"vision"
+							],
+							"path": [
+								"api",
+								"v3",
+								"klines"
+							],
+							"query": [
+								{
+									"key": "symbol",
+									"value": "BTCUSDT"
+								},
+								{
+									"key": "interval",
+									"value": "MINUTE"
+								},
+								{
+									"key": "limit",
+									"value": "1000",
+									"disabled": true
+								},
+								{
+									"key": "startTime",
+									"value": "1662529642000",
+									"disabled": true
+								},
+								{
+									"key": "endTime",
+									"value": "1662529702000",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
